@@ -1,0 +1,85 @@
+/* ---- reset ---- */
+
+body {
+  margin: 0;
+  font:normal 75% Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+/* ---- particles.js container ---- */
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  animation: ch_bg 72s linear infinite 5s;
+  //animation-name: ch_bg;
+  //animation-duration: 5s;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  z-index:0
+}
+#particles-js{
+  position: absolute;
+  width:100%;
+  height:100%;
+  z-index:11;
+}
+.index_content{
+  display: block;
+  background-color:#32303085;
+  position: absolute;
+  padding-top: 17%;
+  z-index: 12;
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  color:white;
+  h2{
+    font-size: 52px;
+    font-weight: bold;
+    font-family: auto;
+    margin-bottom: 40px;
+  }h3{
+    font-size: 24px;
+    margin: 12px auto;
+  }
+.indent{
+  z-index:0
+}
+
+}
+// End index page
+@keyframes ch_bg{
+  
+  0% {
+    background-image: url('../images/bg_2.jpg');
+    opacity: 1;
+    animation-timing-function: ease-in;
+    }
+  8% {
+    background-image: url('../images/bg_1.jpg');
+      opacity: 0.5;
+      transform: scale(1.15);
+      animation-timing-function: ease-out;
+  }
+  17% {
+    background-image: url('../images/bg_3.jpg');
+      opacity: 1;
+      transform: scale(1.20);
+  }
+  25% {
+      background-image: url('../images/bg_2.jpg');
+      opacity: 0.5;
+      transform: scale(1.40);
+  }
+  100% { 
+    background-image: url('../images/bg_1.jpg');
+    opacity: 1 
+  }
+}
