@@ -30,7 +30,11 @@ canvas {
   height:100%;
   z-index:11;
 }
+
 .index_content{
+  @media  only screen and(max-width: 777px) {
+    text-align: center !important;
+  }
   display: block;
   background-color:#32303085;
   position: absolute;

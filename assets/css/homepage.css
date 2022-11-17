@@ -28,7 +28,13 @@
   padding: 50px 0;
   margin-top: 70px;
   background-color: rgba(91, 91, 91, 0.6117647059);
-  overflow: scroll;
+  overflow-x: scroll;
+}
+@media only screen and (max-width: 800px) {
+  .main_sec {
+    padding: 20px 0;
+    margin-top: 30px;
+  }
 }
 
 .main_head {
@@ -98,7 +104,7 @@ form textarea.form-control {
 }
 
 .social_media .icon_box {
-  padding: 8px 0;
+  padding: 8px 10px;
   text-align: center;
   font-size: 24px;
   border: 1px solid #bebcbc;
@@ -182,6 +188,11 @@ form textarea.form-control {
   margin-top: 0px;
 }
 
+.grid-system {
+  display: flex;
+  grid-template-columns: 10% 90%;
+}
+
 /* ---- reset ---- */
 body {
   margin: 0;
@@ -223,6 +234,11 @@ canvas {
   height: 100vh;
   top: 0;
   color: white;
+}
+@media only screen and (max-width: 777px) {
+  .index_content {
+    text-align: center !important;
+  }
 }
 .index_content h2 {
   font-size: 52px;
@@ -320,6 +336,10 @@ canvas {
 }
 .other_page .menu li span.text {
   display: block;
+}
+.other_page .menu .social_media {
+  display: block;
+  width: 100%;
 }
 .other_page .menu .social_media .icon_box {
   padding: 8px 0;
@@ -420,14 +440,13 @@ canvas {
 .other_page .Toggle_menu .social_media .icon_box {
   margin: 7px auto;
 }
-.other_page .full_screen {
-  flex: 0 0 96% !important;
-  max-width: 96% !important;
+.other_page .main_sec {
+  overflow-x: hidden;
+  height: 90vh;
 }
 .other_page .content_pages {
-  flex: 0 0 82%;
-  max-width: 82%;
-  margin-right: 10px;
+  width: 100%;
+  padding: 0 15px;
 }
 .other_page .content_pages .main_head h2 {
   margin-top: 42px;
@@ -447,8 +466,7 @@ canvas {
   display: block;
 }
 .other_page .content_pages .about_section img {
-  width: 519px;
-  height: 307px;
+  width: 100%;
   border-radius: 11px;
   opacity: 0.8;
 }
@@ -461,6 +479,35 @@ canvas {
   font-size: 15px;
   line-height: 23px;
   color: #cecece;
+}
+.other_page .content_pages .about_section .aboust-grid-sec {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  gap: 20px;
+  align-content: center;
+}
+.other_page .content_pages .about_section .aboust-grid-sec .box {
+  padding: 10px;
+}
+.other_page .content_pages .about_section .aboust-grid-sec .box img {
+  height: 100%;
+}
+@media only screen and (min-width: 800px) {
+  .other_page .content_pages .about_section .aboust-grid-sec .box {
+    text-align: center;
+  }
+  .other_page .content_pages .about_section .aboust-grid-sec .box img {
+    width: 555px;
+  }
+}
+@media only screen and (max-width: 800px) {
+  .other_page .content_pages .about_section .aboust-grid-sec {
+    text-align: center !important;
+    grid-template-columns: 100%;
+  }
+  .other_page .content_pages .about_section .aboust-grid-sec h3 {
+    padding-top: 15px;
+  }
 }
 .other_page .content_pages .workMe_section {
   display: none;

@@ -18,7 +18,11 @@
     padding:50px 0;
     margin-top: 70px;
     background-color: #5b5b5b9c;
-    overflow: scroll;
+    overflow-x: scroll;
+    @media  only screen and(max-width: 800px) {
+        padding:20px 0;
+        margin-top: 30px;
+    }
 }
 .main_head{
     text-align:center;
@@ -91,7 +95,7 @@ form{
 }
 
 %icon_box{
-    padding: 8px 0;
+    padding: 8px 10px;
     text-align: center;
     font-size: 24px;
     border: 1px solid #bebcbc;
@@ -184,3 +188,10 @@ form{
         }
     }
   }
+
+//######### Grid #########
+.grid-system{
+    display: flex;
+    grid-template-columns: 10% 90%;
+    //justify-content: center;
+}

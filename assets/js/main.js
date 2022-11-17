@@ -145,6 +145,11 @@ $('#btn_Toggle_Menu').on('click',function(e){
   .siblings().toggleClass('full_screen');
   $(this).toggleClass('open');
 });
+// close the sidebar if the screen less than 1111
+if(window.innerWidth <= 1111){
+  $('#btn_Toggle_Menu').parentsUntil('.other_page').find('.menu').parent().toggleClass('Toggle_menu');
+}
+
 ///////// show work
 $('.my_work_btn').on('click',function(e){
   e.preventDefault();
