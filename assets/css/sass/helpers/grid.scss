@@ -16,7 +16,7 @@
     padding:0
 }.main_sec{
     padding:50px 0;
-    margin-top: 70px;
+    margin-top: 50px;
     background-color: #5b5b5b9c;
     overflow-x: scroll;
     @media  only screen and(max-width: 800px) {
@@ -169,6 +169,18 @@ form{
 
 .social_media{
     padding: 22px 0;
+    @media  only screen and(max-width: 800px) {
+        &.home-icon{
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+            .icon_box{
+                margin-right: 0 !important;
+            }
+        }
+    }
+   
     .icon_box{
         @extend %icon_box;
         display: inline-block;
@@ -181,6 +193,7 @@ form{
         a{
             color: #fff;
         }
+        
     }.title_box {
         @extend %title_box;
         p{
